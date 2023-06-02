@@ -27,6 +27,21 @@
             bindings = <&kp BACKSPACE>, <&kp UNDERSCORE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        lhpt: layer_tap_hold_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_HOLD_PREFERRED";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <
+                0  1  2  3  4  5       6  7  8  9  10
+                            16
+
+                   25 26 27 28 29
+
+            >;
+        };
     };
     macros {
         altffour: altffour {
@@ -54,7 +69,7 @@
    &mgresc   &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I     &kp O   &kp P    &bs_us
    &kp TAB   &kp A &kp S &kp D &kp F &kp G     &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-                  &kp LGUI &kp LCTRL &lt 1 ENTER &kp SPACE &mo 2 &kp RALT
+                  &kp LGUI &kp LCTRL &lhpt 1 ENTER &kp SPACE &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {

@@ -49,6 +49,24 @@
         };
     };
 
+    macros {
+        url_macro: url_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_tap
+                &kp H &kp T &kp T &kp P &kp S &kp COLON &kp SLASH &kp SLASH
+                &kp G &kp I &kp T &kp H &kp U &kp B &kp DOT &kp C &kp O &kp M
+                &kp SLASH &kp L &kp I &kp A &kp D &kp O &kp Z &kp SLASH
+                &kp Z &kp M &kp K &kp DASH &kp C &kp O &kp N &kp F &kp I &kp G
+                &kp SLASH &kp B &kp L &kp O &kp B &kp SLASH &kp M &kp A &kp S
+                &kp T &kp E &kp R &kp SLASH &kp C &kp O &kp N &kp F &kp I &kp G
+                &kp SLASH &kp S &kp K &kp E &kp L &kp T &kp Y &kp L &kp DOT
+                &kp K &kp E &kp Y &kp M &kp A &kp P
+            >;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -57,16 +75,16 @@
     &kp Q       &kp W       &kp E       &kp R         &kp T       &kp Y       &kp U        &kp I       &kp O           &kp P
     &hml LGUI A  &hml LALT S  &hml LCTRL D &hml LSHFT F   &kp G       &kp H       &hmr LSHFT J  &hmr LCTRL K &hmr LALT L      &hmr LGUI SEMI
     &kp Z       &kp X  &kp C       &kp V         &kp B       &kp N       &kp M        &kp COMMA   &kp DOT    &kp FSLH
-                            &lt MED ESC &lt NAV RET &kp TAB     &lt SYM SPACE &lt NUM BSPC &lt FUN SQT
+                            &lt MED ESC &lt NAV RET &kp TAB     &lt SYM BSPC &lt NUM SPACE &lt FUN SQT
             >;
         };
 
         nav_layer {
             bindings = <
-    &none       &none       &none       &none       &none                           &kp LC(Y)   &kp LC(V)   &kp LC(C)   &kp LC(X)   &kp LC(Z)
-    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none                           &kp CAPS    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
+    &none       &none       &none       &none       &none                           &kp CAPS    &kp LC(V)   &kp LC(C)   &kp LC(X)   &kp LC(Z)
+    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none                           &caps_word  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
     &none       &none       &none       &none       &none                           &kp INS     &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
-                                        &none       &trans  &none       &kp RET     &kp BSPC    &kp DEL     
+                                        &none       &trans  &none       &kp BSPC     &kp SPACE  &kp SQT
             >;
         };
 
@@ -91,9 +109,9 @@
         fun_layer {
             bindings = <
     &kp F12 &kp F7  &kp F8  &kp F9      &kp PSCRN                           &none   &none       &none       &none       &none
-    &kp F11 &kp F4  &kp F5  &kp F6      &kp SLCK                            &none   &kp RSHFT   &kp RCTRL   &kp RALT    &kp RGUI
+    &kp F11 &kp F4  &kp F5  &kp F6      &kp SLCK                            &none   &kp RSHFT   &kpkp RGUI
     &kp F10 &kp F1  &kp F2  &kp F3      &kp PAUSE_BREAK                     &none   &none       &none       &none       &none
-                            &kp K_APP   &kp SPACE       &kp TAB     &none   &none   &trans
+                            &kp K_APP   &kp ENTER    &kp TAB     &none   &none   &trans
             >;
         };
 
@@ -101,7 +119,7 @@
             bindings = <
     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR  &none       &bootloader                     &none       &none       &none           &none           &none
     &kp LGUI     &kp LALT     &kp LCTRL   &kp LSHFT   &none                           &none       &kp C_PREV  &kp C_VOL_UP    &kp C_VOL_DN    &kp C_NEXT
-    &none        &none        &none       &none       &none                           &none       &none       &none           &none           &none
+    &url_macro   &none        &none       &none       &none                           &none       &none       &none           &none           &none
                                           &trans      &none   &none       &kp C_STOP  &kp C_PP    &kp C_MUTE     
             >;
         };

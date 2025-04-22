@@ -55,13 +55,13 @@
             #binding-cells = <0>;
             bindings = <
                 &macro_tap
-                &kp H &kp T &kp T &kp P &kp S &kp COLON &kp FLSH &kp FLSH
+                &kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH
                 &kp G &kp I &kp T &kp H &kp U &kp B &kp DOT &kp C &kp O &kp M
-                &kp FLSH &kp L &kp I &kp A &kp D &kp O &kp Z &kp FLSH
+                &kp FSLH &kp L &kp I &kp A &kp D &kp O &kp Z &kp FSLH
                 &kp Z &kp M &kp K &kp DASH &kp C &kp O &kp N &kp F &kp I &kp G
-                &kp FLSH &kp B &kp L &kp O &kp B &kp FLSH &kp M &kp A &kp S
-                &kp T &kp E &kp R &kp FLSH &kp C &kp O &kp N &kp F &kp I &kp G
-                &kp FLSH &kp S &kp K &kp E &kp L &kp T &kp Y &kp L &kp DOT
+                &kp FSLH &kp B &kp L &kp O &kp B &kp FSLH &kp M &kp A &kp S
+                &kp T &kp E &kp R &kp FSLH &kp C &kp O &kp N &kp F &kp I &kp G
+                &kp FSLH &kp S &kp K &kp E &kp L &kp T &kp Y &kp L &kp DOT
                 &kp K &kp E &kp Y &kp M &kp A &kp P
             >;
         };

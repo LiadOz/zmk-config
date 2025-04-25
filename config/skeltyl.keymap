@@ -30,6 +30,7 @@
        30 31 32 33 34 35
               >;
             hold-trigger-on-release;
+            display-name = "Home Row Left";
         };
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
@@ -46,9 +47,14 @@
                       30 31 32 33 34 35
               >;
             hold-trigger-on-release;
+            display-name = "Home Row Right";
         };
-        &lt {
+        qlt: quick_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
             quick-tap-ms = <175>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Quick Layer Tap";
         };
     };
 
@@ -67,6 +73,7 @@
                 &kp FSLH &kp S &kp K &kp E &kp L &kp T &kp Y &kp L &kp DOT
                 &kp K &kp E &kp Y &kp M &kp A &kp P
             >;
+            display-name = "Keyboard Guide";
         };
     };
 

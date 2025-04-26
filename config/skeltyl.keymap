@@ -18,7 +18,7 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             require-prior-idle-ms = <100>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
@@ -68,7 +68,10 @@
             bindings = <
                 &kp G &kp I &kp T &kp H &kp U &kp B &kp DOT &kp C &kp O &kp M
                 &kp FSLH &kp L &kp I &kp A &kp D &kp O &kp Z &kp FSLH
-                &kp Z &kp M &kp K &kp MINUS &kp C &kp O &kp N &kp F &kp I &kp G
+                &kp Z &kp M &kp K &kp MINUS &kp C &kp O &kp N &kp F &kp I &kp G 
+            >
+            ,
+            <
                 &kp FSLH &kp B &kp L &kp O &kp B &kp FSLH &kp M &kp A &kp S
                 &kp T &kp E &kp R &kp FSLH &kp C &kp O &kp N &kp F &kp I &kp G
                 &kp FSLH &kp S &kp K &kp E &kp L &kp T &kp Y &kp L &kp DOT

@@ -18,8 +18,8 @@
         hsl: s_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <160>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
             quick-tap-ms = <250>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = < 
@@ -34,8 +34,8 @@
         hsr: s_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <160>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
             quick-tap-ms = <250>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = < 

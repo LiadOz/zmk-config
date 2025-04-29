@@ -23,6 +23,7 @@
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <1>;    // <---[[the W key]]
+            hold-trigger-on-release;
         };
         hsl: s_left {
             compatible = "zmk,behavior-hold-tap";

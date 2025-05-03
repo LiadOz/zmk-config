@@ -40,7 +40,7 @@
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L TMB>;
-            hold-trigger-on-release
+            hold-trigger-on-release;
             display-name = "Home Row Right";
         };
     };

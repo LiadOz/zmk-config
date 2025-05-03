@@ -71,10 +71,10 @@
 
         nav_layer {
             bindings = <
-    &kp LC(D)    &kp LC(W)    &kp LC(U)    &kp LC(F)    &kp LC(T)                              &kp CAPS    &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
+    &kp LC(D)    &kp LC(W)    &kp LC(U)    &kp LC(F)    &kp LC(T)                              &kp CAPS    &none       &none        &kp DQT      &kp SQT
     &kp LGUI     &kp LALT     &kp LCTRL    &kp LSHFT    &kp LA(F4)                             &caps_word  &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT
     &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &kp LC(B)                              &kp INS     &kp HOME    &kp PG_DN    &kp PG_UP    &kp END
-                                           &kp LSHFT    &trans  &bootloader       &kp BSPC     &kp SPACE  &kp LSHFT
+                                           &kp LSHFT    &trans  &bootloader       &kp BSPC     &kp SPACE   &kp LSHFT
             >;
         };
 
@@ -83,15 +83,15 @@
     &kp EXCL    &kp AT      &kp HASH    &kp DLLR  &kp PRCNT                         &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR
     &none       &none       &none       &none     &none                             &none       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
     &kp MINUS   &kp PLUS    &kp EQUAL   &kp LBKT  &kp RBKT                          &kp UNDER   &kp LBRC    &kp RBRC    &kp PIPE    &kp TILDE
-                                        &none     &none      &none          &trans  &none       &none
+                                        &none     &none      &none          &trans  &none       &kp DEL
             >;
         };
 
         num_layer {
             bindings = <
-    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                           &kp N6      &kp N7   &kp N8    &kp N9  &kp N0
-    &kp LG(N1)   &kp LG(N2)   &kp LG(N3)   &kp LG(N4)   &kp LG(N5)                       &kp C_STOP  &kp C_PP &kp GRAVE &kp DQT &kp SQT
-    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR                       &none       &none    &none     &none   &kp BSLH 
+    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                           &kp N6      &kp N7       &kp N8       &kp N9     &kp N0
+    &kp LG(N1)   &kp LG(N2)   &kp LG(N3)   &kp LG(N4)   &kp LG(N5)                       &kp C_STOP  &kp C_PP     &kp GRAVE    &kp DQT    &kp SQT
+    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR                       &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp BSLH 
                                            &kp LSHFT    &kp RET  &trans         &kp BSPC &kp SPACE   &none
             >;
         };

@@ -25,7 +25,7 @@
             flavor = "tap-preferred";
             require-prior-idle-ms = <130>;
             tapping-term-ms = <280>;
-            quick-tap-ms = <125>;
+            quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R TMB>;
             hold-trigger-on-release;
@@ -37,7 +37,7 @@
             flavor = "tap-preferred";
             require-prior-idle-ms = <130>;
             tapping-term-ms = <280>;
-            quick-tap-ms = <125>;
+            quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L TMB>;
             hold-trigger-on-release;
@@ -52,7 +52,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
     };
@@ -71,7 +71,7 @@
 
         nav_layer {
             bindings = <
-    &kp LC(D)    &kp LC(W)    &kp LC(U)    &kp LC(F)    &kp LC(T)                              &kp CAPS    &kp C_PREV  &kp C_VOL_UP &kp C_VOL_DN &kp C_NEXT
+    &kp LC(D)    &kp LC(W)    &kp LC(U)    &kp LC(F)    &kp LC(T)                              &kp CAPS    &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
     &kp LGUI     &kp LALT     &kp LCTRL    &kp LSHFT    &kp LA(F4)                             &caps_word  &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT
     &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &kp LC(B)                              &kp INS     &kp HOME    &kp PG_DN    &kp PG_UP    &kp END
                                            &kp LSHFT    &trans  &bootloader       &kp BSPC     &kp SPACE  &kp LSHFT
@@ -89,10 +89,10 @@
 
         num_layer {
             bindings = <
-    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                          &kp N6      &kp N7   &kp N8    &kp N9  &kp N0
-    &kp LG(N1)   &kp LG(N2)   &kp LG(N3)   &kp LG(N4)   &kp LG(N5)                      &kp C_STOP  &kp C_PP &kp GRAVE &kp DQT &kp SQT
-    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR                      &none       &none    &none     &none   &kp BSLH 
-                                           &kp LSHFT    &kp RET  &trans         &none   &none       &none
+    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                           &kp N6      &kp N7   &kp N8    &kp N9  &kp N0
+    &kp LG(N1)   &kp LG(N2)   &kp LG(N3)   &kp LG(N4)   &kp LG(N5)                       &kp C_STOP  &kp C_PP &kp GRAVE &kp DQT &kp SQT
+    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR                       &none       &none    &none     &none   &kp BSLH 
+                                           &kp LSHFT    &kp RET  &trans         &kp BSPC &kp SPACE   &none
             >;
         };
     };
